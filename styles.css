@@ -1,0 +1,74 @@
+header {
+    background: rgb(28, 28, 28);
+    padding: 0px;
+}
+body{
+    background: rgb(48, 48, 48);
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.nlist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nlistpoint {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.navbar ul li {
+    margin-left: 1em;
+    margin-top: -3px;
+    padding: 1em 5em;
+}
+
+.navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:orange;
+    font-weight: 599;
+}
+
+.navbar ul li a::after{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 3px;
+    transition: all 0.2s linear;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+    background-color: orange; 
+}
+
+.canvas {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.snake-score {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: Bold;
+    font-size: 30px;
+
+    padding-left: 210px;
+    transform: translateY(100px);
+}
