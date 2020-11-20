@@ -128,6 +128,6 @@ function Snake()
         this.x = scale * 4;
         this.y = scale * 4;
 
-        fruit.pickLocation();
+        fruit.pickLocation(this.tail);
     }
 }

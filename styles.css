@@ -63,7 +63,7 @@ body{
     margin-left: 200px;
 }
 
-.snake-score {
+.snake-score, .RandomNumber{
 
     font-family: 'Courier New', Courier, monospace;
     font-style: Bold;

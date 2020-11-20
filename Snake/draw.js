@@ -12,7 +12,7 @@ var snake;
     snake = new Snake();
     fruit = new Fruit();
     
-    fruit.pickLocation();
+    fruit.pickLocation(snake.tail);
 
     window.setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -22,7 +22,7 @@ var snake;
 
         if(snake.eat(fruit))
         {
-            fruit.pickLocation();
+            fruit.pickLocation(snake.tail);
         }
 
     },125);
