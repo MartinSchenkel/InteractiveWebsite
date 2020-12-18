@@ -63,7 +63,7 @@ body{
     margin-left: 200px;
 }
 
-.snake-score, .RandomNumber{
+.snake-score, .RandomNumber, .buttons, .Roll, .Rest{
 
     font-family: 'Courier New', Courier, monospace;
     font-style: Bold;
@@ -71,4 +71,25 @@ body{
 
     padding-left: 210px;
     transform: translateY(100px);
+}
+
+.Roll {
+    padding-left: 0;
+    margin-left: 210px;
+}
+
+.Rest {
+    margin-left: 420px;
+    transform: translateY(165px);
+}
+
+.RandomNumber{
+    margin-left: 260px;
+    transform: translateY(230px);
+}
+
+.buttons input {
+    margin-top: 10px;
+    height: 200px;
+    width: 30px;
 }

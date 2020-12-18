@@ -27,8 +27,6 @@ function Snake()
             this.tail[i] = this.tail[i + 1];
         }
 
-        scr.textContent = "Score: " + this.score;
-
         this.tail[this.score - 1] = {x: this.x, y: this.y };
 
         this.x += this.xSpeed;
@@ -112,6 +110,7 @@ function Snake()
         if(this.x == fruit.x && this.y == fruit.y)
         {
             this.score++;
+            scr.textContent = "Score: " + this.score;
             return true;
         }
         return false;
